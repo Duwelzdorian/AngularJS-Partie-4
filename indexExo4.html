@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 4</title>
+</head>
+
+<body>
+  <div ng-app="myApp" ng-controller="carsCtrl">
+    <div ng-repeat="voiture in car | filter : {couleur : '!verte'}">
+      <p>{{voiture.marque}} : {{voiture.couleur}}</p>
+    </div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+<script src="scriptExo4.js"></script>
+</body>
+
+</html>
